@@ -286,33 +286,6 @@ footer{
    	
 
 }
-@media screen and (max-width: 768px) {
-	img.me{ 
-		float: none;
-		clear: both; 
-	}
-
-	.mainText{
-		width: 200px;
-	}
-
-	.centerHeader{
-		width: 560px;
-	}
-
-	.bodyContainer{
-		width: 560px;
-	}
-
-	.centerHeader{
-		width: 560px;
-	}
-
-	.navBar{
-		width: 246px;
-	}
-
-}
 
 @media screen and (max-width: 980px) {
 	img.me{ 
@@ -339,6 +312,11 @@ footer{
 	.navBar{
 		width: 246px;
 	}
+
+	.textboxSize{
+	margin: 10px 30px;
+	width: 200px;
+}
 
 }
 
@@ -377,6 +355,9 @@ footer{
     	padding-left: 20px;
 	}
 
+	.textboxSize{
+		width: 480px;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -440,6 +421,9 @@ footer{
 	img.me{ 
 		width: 400px;
 		height: 400px;
+	}
+	.textboxSize{
+		width: 380px;
 	}
 
 }
