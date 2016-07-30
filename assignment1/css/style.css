@@ -178,7 +178,7 @@ p.paragraphText{
 p.formText{
 	font-size: 16px;
 	font-weight: bold;
-	margin: 10px 30px;
+	margin: 30px 0 0 30px;
 
 }
 
@@ -211,19 +211,20 @@ a.headerTextLink{
 
 }
 
-a:link{
+a:link.headerTextLink{
 	color: #777777;
 	text-decoration: none;
 }
 
 
-a:visited {
+a:visited.headerTextLink {
     color: #777777;
 }
 
-a:hover{
+a:hover.headerTextLink{
 	background-color: #4aaaa5;
 	color:#ffffff;
+	padding: 10px;
 }
 
 footer{
@@ -242,3 +243,207 @@ footer{
 	padding: 30px;
 
 }
+
+.portfolioRow{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	float:left;
+
+
+}
+
+.portfolioImage{
+	margin-left: 30px;
+	float: left;
+
+}
+.portfolioTextDefault{
+	position: absolute;
+	text-align: center;
+    font-size:16px;
+	color: white;
+	background-color: #4aaaa5;
+   	padding: 15px 0px;
+   	top: 130px;
+   	width: 278px;
+
+}
+.portfolioTextLeft{
+
+    left: 30px; 
+
+}
+.portfolioTextRight{
+
+   	left: 338px; 
+
+}
+.portfolioLast{
+	/*Fix this later, make margin bottom for .about class*/
+
+   	margin-bottom: 30px;
+   	
+
+}
+@media screen and (max-width: 768px) {
+	img.me{ 
+		float: none;
+		clear: both; 
+	}
+
+	.mainText{
+		width: 200px;
+	}
+
+	.centerHeader{
+		width: 560px;
+	}
+
+	.bodyContainer{
+		width: 560px;
+	}
+
+	.centerHeader{
+		width: 560px;
+	}
+
+	.navBar{
+		width: 246px;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+	img.me{ 
+		float: none;
+		clear: both; 
+	}
+
+	.mainText{
+		width: 200px;
+	}
+
+	.centerHeader{
+		width: 560px;
+	}
+
+	.bodyContainer{
+		width: 560px;
+	}
+
+	.centerHeader{
+		width: 560px;
+	}
+
+	.navBar{
+		width: 246px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	img.me{ 
+	float: left; 
+	margin: 20px 30px 10px 30px;
+}
+	.mainText{
+		width: 100%;
+	}
+
+	.centerHeader{
+		width: 560px;
+	}
+
+	.bodyContainer{
+		width: 560px;
+	}
+
+	.centerHeader{
+		width: 560px;
+	}
+
+	.navBar{
+		width: 100%;
+		margin-top: 30px;
+	}
+	.navBox{
+		display: table-row;
+		
+
+	}
+	.imgLinks{
+    	text-align: left;
+    	padding-left: 20px;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+
+
+	.h1Helper{
+		display: table-row;
+		width: 100%;
+		text-align: center;
+	
+	}
+	.name{
+		width: 100%;
+	}
+	.linkBox{
+		width: 100%;
+  		text-align: center;
+  		padding: 30px 0;
+
+	}
+	a.headerTextLink{
+		padding: 0 50px;
+
+	}
+	a:hover.headerTextLink{
+		padding: 20px 50px;
+	}
+	.mainText{
+		width: 100%;
+	}
+
+	.centerHeader{
+		width: 100%;
+
+	}
+
+	.bodyContainer{
+		width: 450px;
+	}
+
+	.centerHeader{
+		width: 100%;
+	}
+
+	.navBar{
+		width: 100%;
+		margin-top: 30px;
+	}
+	.navBox{
+		display: table-row;
+		
+
+	}
+	.imgLinks{
+    	text-align: left;
+    	padding-left: 20px;
+	}
+	
+
+	img.me{ 
+		width: 400px;
+		height: 400px;
+	}
+
+}
+
+
+
+
