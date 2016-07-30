@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="la">
+	<head>
+		<title>Eric Steinberg's Portfolio</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			function inputFocus(i){
+				if(i.value==i.defaultValue)
+					{ i.value=""; i.style.color="#000"; 
+				}
+			}
+			function inputBlur(i){
+				if(i.value==""){ 
+					i.value=i.defaultValue; i.style.color="#888";
+				}
+			}
+			function message() {
+    			var name = document.getElementById("name").value;
+    			var email = document.getElementById("email").value;
+    			var msg = document.getElementById("msg").value;
+        		alert("Hello "+name+".\n\n"+"I see that your email is "+email+".\n\n"+"Thank you for your message of: \n\n"+msg);
+
+			}
+		</script>
+	</head>
+	<body>
+
+		<!--Header -->
+		<header>
+			<div class="centerHeader">
+				<div class="headerBox">
+					<div class="h1Helper">
+						<h1 class="name">Eric Steinberg</h1>
+					</div>
+					
+					<div class="linkBox">
+						<a class ="headerTextLink" href="index.html">About</a> 
+						<a class ="headerTextLink" href="portfolio.html">Portfolio</a>
+						<a class ="headerTextLink" href="contact.html">Contact</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--Body -->
+		<div class="mainBody">
+			<div class="bodyContainer">
+				<div class="bodyBox">
+					<div class="mainText">
+
+							<!--Main Textbox -->
+							<h2 class="about">Contact</h2>
+							<form name ="contactForm" onsubmit="return message()">
+							<p class="formText">Name</p>
+							<input class="textboxSize"  type="text" id="name" style="color:#888;" value="John Smith" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+							<p class="formText">Email</p>
+							<input class="textboxSize"  type="text" id="email" style="color:#888;" value="example@gmail.com" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+							<p class="formText">Message</p>
+							<textarea class="textboxSize" rows="15" id="msg"></textarea>
+							<input type="submit" value="Submit" id="submit" class="submitButton" />
+
+
+							</form>
+
+					</div>
+
+					<div class="spacerBox"></div>
+
+					<div class="navBox">
+						<aside class="navBar">
+							<div class="connectBox">
+								<!--Sidebar -->
+								<h3 class="connectText">Connect With Me</h3>
+
+								<!-- Images and links for sidebar -->
+								<div class="imgLinks">
+									<a href="https://github.com/CPUhobbes"> <img class="icons" src="images/github.png" width="50" height="50" alt="github" /></a>
+									<a href="http://stackexchange.com/users/8890786/eric-steinberg"><img class="icons" src="images/stackoverflow.png" width="50" height="50" alt="stackoverflow" /></a>
+									<a href="https://www.linkedin.com/in/eric-steinberg-418a2937"><img class="icons" src="images/linkedin.png" width="50" height="50" alt="linkedin" /></a>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<p class="footerText">&copy; Copyright 2016 Eric Steinberg</p>
+		</footer>
+	</body>
+</html>

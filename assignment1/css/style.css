@@ -1,0 +1,244 @@
+/*Position and min height are for sticky footer*/
+html {
+    position: relative;
+    min-height: 100%;
+
+}
+
+/*Body set to default specs*/
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #777777;
+	height: 100%;
+	/*min-height: 100%;*/
+	margin: 0 0 100px;
+	background-image: url("../images/textured_paper.png");
+
+}
+
+/*Header set to default specs, using inline block to allow centering of child*/
+header{
+	background-color: #ffffff;
+	border-bottom:3px solid #cccccc;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 0;
+	/*display:inline-block;*/
+}
+
+/*Centers main header box with fixed width*/
+.centerHeader{
+	
+	display:inline-block;
+	width: 960px;
+    text-align: left;
+}
+
+/*Creates table and spans full width of parent div*/
+.headerBox{
+    display: table;
+    width:100%;
+
+}
+
+/*helper to help align name*/
+.h1Helper{
+
+	display: table-cell;
+	width: 50%;
+	
+}
+
+/*Float used for background color to only cover text*/
+.name{
+	float: left;
+	background-color: #4aaaa5;
+	color:white;
+	padding: 10px;
+}
+
+/*Box to help align all links*/
+.linkBox{
+	font-size:16px;
+	width: 50%;
+  	display: table-cell;
+  	text-align: right;
+  	vertical-align: middle;
+}
+
+.mainBody{
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+	min-height: 100%;
+	/*display:inline-block;*/
+
+}
+.bodyContainer{
+	
+	display:inline-block;
+	width: 960px;
+    text-align: left;
+    padding: 40px 0px 20px 0px;
+
+}
+
+.bodyBox{
+    display: table;
+    width:100%;
+
+
+}
+.mainText{
+
+	display: table-cell;
+	width: 646px;
+	background-color: white;
+	vertical-align: top;
+	border:2px solid #dddddd;
+	
+}
+img.me{ 
+	float: left; 
+	margin: 20px 30px 10px 30px;
+}
+
+.about{
+	margin: 10px 30px 10px 30px;
+	padding: 20px 0px;
+	border-bottom:3px solid #dddddd;
+	color: #4aaaa5;
+	
+}
+
+.navBox{
+	display: table-cell;
+}
+
+.spacerBox{
+	display: table-cell;
+	width: 40px;
+
+}
+
+.navBar{
+	background-color: white;
+	width: 266px;
+	height: auto;
+	border:2px solid #dddddd;
+}
+
+
+.connectText{
+	color: #4aaaa5;
+	margin: 30px 30px;
+	border-bottom:3px solid #cccccc;
+	padding: 0 0 15px 0;
+}
+
+.imgLinks{
+	display:block;
+    margin:0 auto;
+    text-align: center;
+}
+
+
+img.icons{
+	padding: 0 10px;
+	margin-bottom: 30px; 
+	
+}
+
+h1{
+	font-size: 40px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+
+
+}
+h2{
+	font-size: 30px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+
+}
+h3{
+	font-size: 20px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+
+}
+
+p.paragraphText{
+	font-size: 14px;
+	line-height: 25px;
+	margin: 20px 30px;
+
+
+}
+
+p.formText{
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 30px;
+
+}
+
+.textboxSize{
+	margin: 10px 30px;
+	width: 578px;
+}
+
+.submitButton{
+	margin: 10px 30px 30px 30px;
+	border: none;
+	background-color: #4aaaa5;
+	color: white;
+	padding: 10px 25px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+input{
+	margin: 0px 30px;
+}
+
+a.headerTextLink{
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+
+a:link{
+	color: #777777;
+	text-decoration: none;
+}
+
+
+a:visited {
+    color: #777777;
+}
+
+a:hover{
+	background-color: #4aaaa5;
+	color:#ffffff;
+}
+
+footer{
+	clear: both;
+	background-color: #666666;
+	color: #ffffff;
+	border-top:3px solid #4aaaa5;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+.footerText{
+	text-align: center;
+	padding: 30px;
+
+}
