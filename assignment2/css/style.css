@@ -49,6 +49,38 @@ body {
 	color:#003459;
 	margin-bottom: 20px;
 }
+.imageEric{
+	float: left;
+	margin-right: 10px;
+}
+p.paragraphText{
+	font-size: 14px;
+	line-height: 25px;
+
+
+}
+.headerTextColor{
+	color:#ffffff;
+}
+
+a:link.headerTextColor{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+a:visited.headerTextColor {
+    color: #ffffff;
+}
+
+a:hover.headerTextColor{
+	color:#003459;
+}
+
+
+
+
+
 
 
 
@@ -66,17 +98,82 @@ footer{
 }
 
 
-@media screen and (max-width: 980px) {
-	
+.navbar-default {
+  background-color: #00171f;
+  border-color: #007ea7;
+}
+.navbar-default .navbar-brand {
+  color: #f8fafb;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #00a8e8;
+}
+.navbar-default .navbar-text {
+  color: #f8fafb;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #f8fafb;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #00a8e8;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #00a8e8;
+  background-color: #007ea7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #00a8e8;
+  background-color: #007ea7;
+}
+.navbar-default .navbar-toggle {
+  border-color: #007ea7;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #007ea7;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f8fafb;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f8fafb;
+}
+.navbar-default .navbar-link {
+  color: #f8fafb;
+}
+.navbar-default .navbar-link:hover {
+  color: #00a8e8;
+}
+.activePage{
+	background-color: #003459;
+
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f8fafb;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #00a8e8;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #00a8e8;
+    background-color: #007ea7;
+  }
 }
 
-@media screen and (max-width: 768px) {
-	
-
-@media screen and (max-width: 640px) {
 
 
-}
+
 
 
 
