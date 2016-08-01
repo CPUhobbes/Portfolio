@@ -1,0 +1,83 @@
+/*Position and min height are for sticky footer*/
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+
+nav{
+	font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+
+
+/*Body set to default specs*/
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #000;
+	min-height: 100%;
+	margin: 0 0 60px 0;
+	background-color: #00a8e8;
+
+}
+.navBackground{
+	background-color: #00171f;
+	color:#ffffff;
+}
+.containerMainBody{
+
+	padding: 20px;
+	margin-bottom: 30px;
+	border:2px solid #00171f;
+	background-image: url("../images/textured_paper.png");
+}
+.containerSidebar{
+
+	padding:20px;
+	margin-bottom: 30px;
+	border:2px solid #00171f;
+	background-image: url("../images/textured_paper.png");
+}
+.headerMainBody{
+	border-bottom:3px solid #003459;
+	color:#003459;
+	margin-bottom: 20px;
+}
+.headerSidebar{
+	border-bottom:3px solid #003459;
+	color:#003459;
+	margin-bottom: 20px;
+}
+
+
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #00171f;
+	color:#ffffff;
+}
+  	
+.footerCenter{
+	padding: 20px;
+}
+
+
+@media screen and (max-width: 980px) {
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+
+@media screen and (max-width: 640px) {
+
+
+}
+
+
+
+
