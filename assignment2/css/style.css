@@ -21,7 +21,8 @@ body {
 	linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
 	linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
 	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
-	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+	-webkit-transform: translate3d(0, 0, 0);
 }
 
 footer{
@@ -103,7 +104,24 @@ a:hover.headerTextColor{
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;
 }
-        	
+.icons{
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+}
+
+
+
+.icons:link{}
+.icons:visited{}
+.icons:hover{
+	animation: shake 1s cubic-bezier(.1,.07,.1,.07) both;
+  	transform: translate3d(0, 0, 0);
+  	-webkit-backface-visibility: hidden;
+  	-webkit-transform: translate3d(0, 0, 0);
+  	-webkit-transform: translateZ(0);
+}  
+
 .footerCenter{
 	padding: 20px;
 }
@@ -183,11 +201,73 @@ a:hover.headerTextColor{
 
 }
 
-@media(max-width: 991px){
+.textboxSize{
+	margin: 10px 0px;
+	width: 100%;
+}
 
+.submitButton{
+	margin: 10px 30px 30px 0px;
+	padding: 10px 25px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.imgSizer{
+	height:200px;
+
+
+}
+.textBG{
+	position: relative;
+	opacity: 0.8;
+	background-color: #00171f;
+	width: 255px;
+	height: 40px;
+	top: -55px;
+	display: table;
+	padding:0;
+	margin: 0;
+}
+
+.portfolioTextDefault{
+	
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+    font-size:16px;
+	color: white;
+   	width: 255px;
+   	font-weight: bold;
+   	top: 50px;
+   	
+}
+
+@media(max-width:1199px){
+	.imgSizer{
+		height:160px;
+		width:204px;
+	}
+	.textBG{
+		width: 204px;
+		top: -50px;
+	}
+}
+
+
+@media(max-width: 991px){
 	.imageEric{
 		width: 200px;
 		height: 200px;
+	}
+
+	.imgSizer{
+		height:270px;
+		width:336px;
+	}
+	.textBG{
+		width: 336px;
+		top: -60px;
 	}
 }
 
@@ -221,8 +301,37 @@ a:hover.headerTextColor{
 		width: 310px;
 		height: 310px;
 	}
+
+	.imgSizer{
+		padding-bottom: 0px;
+		height:400px;
+		width:500px;
+	}
+
+	.textBG{
+		float: none;
+    	margin: 0 auto;
+		width: 500px;
+	}
 }
 
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 
 
 
